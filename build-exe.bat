@@ -6,7 +6,7 @@ echo =======================================================
 echo.
 
 echo [1/3] 检查并安装项目依赖...
-call npm install
+call npm install --legacy-peer-deps
 if %ERRORLEVEL% neq 0 (
     echo [错误] 依赖安装失败，请检查网络或 Node.js 环境。
     pause

@@ -21,13 +21,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: 安装项目依赖
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
-      - name: 安装 Electron 打包构建器
-        run: npm install --no-save electron electron-builder
+      - name: 安装 Electron 桌面端打包器
+        run: npm install --legacy-peer-deps --save-dev electron electron-builder
 
       - name: 构建 Vite 前端静态包
         run: npm run build
