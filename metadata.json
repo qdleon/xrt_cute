@@ -1,0 +1,6 @@
+{
+  "name": "ApexFlow Project Workspace",
+  "description": "Minimalist high-density project management workspace with Kanban boards, list tables, Gantt roadmaps, calendar scheduling, and sprint cycle tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
